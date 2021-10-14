@@ -13,14 +13,12 @@ function App() {
 			`https://api.jikan.moe/v3/top/anime/1/bypopularity`
 		).then((res) => res.json());
 
-		setTopAnime(temp.top.slice(0, 5));
+		setTopAnime(temp.top.slice(0, 7));
 	};
 
 	useEffect(() => {
 		GetTopAnime();
-		console.log("Top Anime");
 	}, []);
-	console.log(topAnime);
 
 	return (
 		<div className='App'>
