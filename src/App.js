@@ -19,8 +19,8 @@ function App() {
 	useEffect(() => {
 		GetTopAnime();
 		console.log("Top Anime");
-		console.log(topAnime);
 	}, []);
+	console.log(topAnime);
 
 	return (
 		<div className='App'>
