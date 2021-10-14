@@ -17,4 +17,8 @@ header h1 {
   font-weight: 400;
   text-align: center;
 }
+
+header h1 strong {
+  color: #313131;
+}
 /*# sourceMappingURL=main.css.map */
