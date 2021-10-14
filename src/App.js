@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import Header from "./components/Header";
 import Sidebar from "./components/Sidebar";
 import MainContent from "./components/MainContent";
@@ -10,9 +10,16 @@ function App() {
 
 	const GetTopAnime = async () => {
 		const temp = await fetch(
-			`https://api.jikan.moe/v3/top/type/page/subtype`
-		);
+			`https://api.jikan.moe/v3/top/anime/1/bypopularity`
+		).then((res) => res.json());
+
+		setTopAnime(temp.top.slice(0, 5));
 	};
+
+	useEffect(() => {
+		GetTopAnime();
+		console.log(topAnime);
+	});
 
 	return (
 		<div className='App'>
