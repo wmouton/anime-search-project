@@ -8,6 +8,12 @@ function App() {
 	const [topAnime, setTopAnime] = useState([]);
 	const [search, setSearch] = useState("");
 
+	const GetTopAnime = async () => {
+		const temp = await fetch(
+			`https://api.jikan.moe/v3/top/type/page/subtype`
+		);
+	};
+
 	return (
 		<div className='App'>
 			<Header />
