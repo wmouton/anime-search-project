@@ -5,9 +5,12 @@ const Sidebar = () => {
 		<>
 			<aside>
 				<nav>
-                <h3>Top Anime</h3>
+					<h3>Top Anime</h3>
 					<a href='#' target='_blank' rel='noreferrer'>
 						Dragon Ball Super
+					</a>
+					<a href='#' target='_blank' rel='noreferrer'>
+						Naruto
 					</a>
 					<a href='#' target='_blank' rel='noreferrer'>
 						One Punch Man
