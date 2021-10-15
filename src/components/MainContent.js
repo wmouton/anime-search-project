@@ -1,4 +1,5 @@
 import React from "react";
+import AnimeCard from "./AnimeCard";
 
 const MainContent = ({ HandleSearch, search, setSearch, animeList }) => {
 	return (
@@ -16,7 +17,7 @@ const MainContent = ({ HandleSearch, search, setSearch, animeList }) => {
 			</div>
 			<div className='anime-list'>
 				{animeList.map((anime) => (
-					<div className='anime-card'>{anime.title}</div>
+					<AnimeCard anime={anime} key={anime.mal_id} />
 				))}
 			</div>
 		</main>
