@@ -1,5 +1,6 @@
-* {
-  background-color: #b8b8b8;
+html {
+  background: url("/src/img/background.jpg") no-repeat center center;
+  background-size: cover;
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
@@ -12,8 +13,12 @@ header {
   padding-bottom: 50px;
 }
 
+header h1 {
+  margin-top: 0px;
+}
+
 header h1 img {
-  padding-left: 20%;
+  padding-left: 10%;
   width: 80%;
 }
 
@@ -53,7 +58,7 @@ header h1 strong {
   color: #888;
   font-size: 16px;
   margin-bottom: 16px;
-  background-color: #eee;
+  background-color: rgba(136, 136, 136, 0.282);
   border-radius: 999px;
   text-decoration: none;
   -webkit-transition: 0.4s;
@@ -61,7 +66,7 @@ header h1 strong {
 }
 
 .content-wrap aside nav a:hover {
-  background-color: #c20606;
+  background-color: rgba(248, 0, 0, 0.412);
   color: white;
 }
 
@@ -105,7 +110,7 @@ header h1 strong {
   max-width: 400px;
   padding: 16px;
   border-radius: 999px;
-  background-color: #eeeeee;
+  background-color: rgba(136, 136, 136, 0.282);
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -127,7 +132,7 @@ header h1 strong {
 }
 
 .content-wrap main .main-head .search-box input:focus, .content-wrap main .main-head .search-box input:valid {
-  background-color: #c20606;
+  background-color: rgba(248, 0, 0, 0.282);
   color: white;
 }
 
@@ -172,7 +177,7 @@ header h1 strong {
 }
 
 .content-wrap main .anime-list .anime-card h3 {
-  color: #c20606;
+  color: #c20606ad;
 }
 
 .content-wrap main .anime-list .anime-card:hover figure img {

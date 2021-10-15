@@ -1,5 +1,10 @@
-* {
-	background-color: #b8b8b8;
+html {
+	background: url("/src/img/background.jpg") no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	// background-color: #a8acaea1;
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
@@ -12,12 +17,13 @@ header {
 	padding-bottom: 50px;
 
 	h1 {
+		margin-top: 0px;
 		// color: rgb(102, 100, 100);
 		// font-size: 36px;
 		// font-weight: 400;
 		// text-align: center;
 		img {
-			padding-left: 20%;
+			padding-left: 10%;
 			width: 80%;
 		}
 
@@ -54,14 +60,14 @@ header {
 				font-size: 16px;
 				margin-bottom: 16px;
 
-				background-color: #eee;
+				background-color: rgba(136, 136, 136, 0.282);
 				border-radius: 999px;
 				text-decoration: none;
 
 				transition: 0.4s;
 
 				&:hover {
-					background-color: #c20606;
+					background-color: rgba(248, 0, 0, 0.412);
 					color: rgb(255, 255, 255);
 				}
 			}
@@ -92,7 +98,7 @@ header {
 					max-width: 400px;
 					padding: 16px;
 					border-radius: 999px;
-					background-color: rgb(238, 238, 238);
+					background-color: rgba(136, 136, 136, 0.282);
 
 					transition: 0.4s;
 
@@ -102,7 +108,7 @@ header {
 
 					&:focus,
 					&:valid {
-						background-color: #c20606;
+						background-color: rgba(248, 0, 0, 0.282);
 						color: rgb(255, 255, 255);
 					}
 				}
@@ -141,7 +147,7 @@ header {
 				}
 
 				h3 {
-					color: #c20606;
+					color: #c20606ad;
 				}
 
 				&:hover {
