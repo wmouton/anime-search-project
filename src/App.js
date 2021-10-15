@@ -26,6 +26,7 @@ function App() {
 			`https://api.jikan.moe/v3/search/anime?q=${query}&order_by=title&sort=asc&limit=50`
 		).then((res) => res.json());
 
+		console.log(temp.results);
 		setAnimeList(temp.results);
 	};
 
