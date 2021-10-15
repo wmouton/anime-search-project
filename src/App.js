@@ -18,7 +18,7 @@ function App() {
 
 	const HandleSearch = (e) => {
 		e.preventDefault();
-		console.log(search);
+		console.log(search)
 		// FethcAnime(search);
 	};
 
@@ -34,6 +34,7 @@ function App() {
 				<MainContent
 					HandleSearch={HandleSearch}
 					search={search}
+					setSearch={setSearch}
 					animeList={animeList}
 				/>
 			</div>
