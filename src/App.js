@@ -31,7 +31,11 @@ function App() {
 			<Header />
 			<div className='content-wrap'>
 				<Sidebar topAnime={topAnime} />
-				<MainContent HandleSearch={HandleSearch} />
+				<MainContent
+					HandleSearch={HandleSearch}
+					search={search}
+					animeList={animeList}
+				/>
 			</div>
 		</div>
 	);
