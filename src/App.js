@@ -13,7 +13,13 @@ function App() {
 			`https://api.jikan.moe/v3/top/anime/1/bypopularity`
 		).then((res) => res.json());
 
-		setTopAnime(temp.top.slice(0, 7));
+		setTopAnime(temp.top.slice(0, 50));
+	};
+
+	const HandleSearch = (e) => {
+		e.preventDefault();
+		console.log(search);
+		// FethcAnime(search);
 	};
 
 	useEffect(() => {
@@ -25,7 +31,7 @@ function App() {
 			<Header />
 			<div className='content-wrap'>
 				<Sidebar topAnime={topAnime} />
-				<MainContent />
+				<MainContent HandleSearch={HandleSearch} />
 			</div>
 		</div>
 	);
