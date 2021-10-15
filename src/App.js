@@ -18,8 +18,15 @@ function App() {
 
 	const HandleSearch = (e) => {
 		e.preventDefault();
-		console.log(search)
-		// FethcAnime(search);
+		fetchAnime(search);
+	};
+
+	const fetchAnime = async (query) => {
+		const temp = await fetch(
+			`https://api.jikan.moe/v3/search/anime?q=${query}&order_by=title&sort=asc&limit=50`
+		).then((res) => res.json());
+
+		setAnimeList(temp.results);
 	};
 
 	useEffect(() => {
